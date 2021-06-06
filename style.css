@@ -1,0 +1,32 @@
+li {
+  background: #F1F7ED;
+  border: none;
+  margin: 8px 0;
+  list-style: none;
+  font-size: large;
+  font-weight: 300;
+  padding: 12.5px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li.done {
+  background: #ccff99;
+}
+
+li.done::before {
+    content: '';
+    position: absolute;
+    border-color: #009933;
+    border-style: solid;
+    border-width: 0 0.3em 0.25em 0;
+    height: 1em;
+    top: 0.5em;
+    right: 0.6em;
+    transform: rotate(45deg);
+    width: 0.5em;
+}

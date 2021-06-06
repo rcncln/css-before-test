@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>css-before-test</title>
+</head>
+
+<body>
+    <ul>
+        <li>buy milk</li>
+        <li>walk</li>
+        <li>train</li>
+        <li>write code</li>
+        <li>clean the room</li>
+        <li>finish the day</li>
+    </ul>
+</body>
+<script>
+    var list = document.querySelector('ul')
+    list.addEventListener('click', function (ev) {
+        if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('done')
+        }
+    }, false)
+</script>
+
+</html>
